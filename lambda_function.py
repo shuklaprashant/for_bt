@@ -25,10 +25,12 @@ def condition(row, value=None):
 filtered_data = csv_handler.filter_data(condition)
 
 # Print the filtered data
+print("Result from CSV Reader Started")
+
 for row in filtered_data:
-    print("Result from CSV Reader Started")
     print(row)
-    print("Result from CSV Reader Finished")
+
+print("Result from CSV Reader Finished")
 
 
 ###############################################################################
@@ -62,7 +64,7 @@ def lambda_handler(event, context):
         print(df[df['team']=='pintu_k_dada'])
         print("DataFrame filterred Results Finished")
     
-    return(df)
+    return df
 
 
 # # Example usage:
