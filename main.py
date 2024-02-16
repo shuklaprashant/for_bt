@@ -26,7 +26,9 @@ filtered_data = csv_handler.filter_data(condition)
 
 # Print the filtered data
 for row in filtered_data:
+    print("Result from CSV Reader Started")
     print(row)
+    print("Result from CSV Reader Finished")
 
 
 ###############################################################################
@@ -56,6 +58,7 @@ df = csv_to_dataframe(csv_file_path)
 if df is not None:
     print("DataFrame created successfully:")
     print(df[df['team']=='pintu_k_dada'])
+    print("DataFrame filterred Results Finished")
 
 
 # # Example usage:
