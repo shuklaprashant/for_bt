@@ -64,7 +64,7 @@ def lambda_handler(event, context):
         print(df[df['team']=='pintu_k_dada'])
         print("DataFrame filterred Results Finished")
     
-    return df
+    # return df
 
 
 # # Example usage:
